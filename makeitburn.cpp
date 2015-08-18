@@ -2,7 +2,6 @@
 #include <ctime>
 #include <thread>
 #include <vector>
-#include <random>
 #include <string>
 
 using namespace std;
@@ -34,22 +33,24 @@ int menu(){
 }
 
 void burncpu(unsigned int instance){
-    for(unsigned int num = 1; num <= 100000000; num++){
+    unsigned int num = 1;
+    while(true){
         unsigned int i = 2;
         while(i <= num){
             if(num % i == 0)
                 break;
             i++;
         }
+        num++;
     }
 }
 
 void memtest(){
-    while(1){
+    cout << "Testing memory, your machine will probably freeze" << endl;
+    while(true){
         int* p=(int*)malloc(4);
         if(!p)break;
     }
-    cout << "memtest" << endl;
 }
 
 void cputest(){
@@ -64,7 +65,6 @@ void cputest(){
 }
 
 int main(){
-    srand(time(0));
     menu();
     return 0;
 }
