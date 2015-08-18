@@ -1,13 +1,13 @@
 # MakeItBurn
 A simple load tester to burn your CPU/RAM down
 
-TO COMPILE
+TO COMPILE: 
 This software has been developed in c++ std11 and pthread library, so you have 2 options:
 
-1- Use the Makefile
+1- Use the Makefile: 
     type "make" in the proyects folder and enjoy
 
-2- Compile it youself
+2- Compile it youself: 
     g++ -Wall -pthread -std=c++11 -o makeitburn makeitburn.cpp
 
 THE BINARY INCLUDED IS ONLY FOR ME TO TEST, IT PROBABLY WONT WORK IN OTHER MACHINES, YOU HAVE TO RECOMPILE IT.
